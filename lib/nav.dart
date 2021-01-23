@@ -14,12 +14,25 @@ class _HomePageState extends State<HomePage> {
 
   List<BottomNavigationBarItem> buildBottomNavBarItems() {
     return [
-      BottomNavigationBarItem(icon: Icon(LineIcons.home), label: 'Home'),
       BottomNavigationBarItem(
-        icon: Icon(LineIcons.leaf),
+          icon: Icon(
+            LineIcons.home,
+            color: Colors.black54,
+          ),
+          label: 'Home'),
+      BottomNavigationBarItem(
+        icon: Icon(
+          LineIcons.leaf,
+          color: Colors.black54,
+        ),
         label: 'Tracker',
       ),
-      BottomNavigationBarItem(icon: Icon(LineIcons.user), label: 'Profile')
+      BottomNavigationBarItem(
+          icon: Icon(
+            LineIcons.user,
+            color: Colors.black54,
+          ),
+          label: 'Profile')
     ];
   }
 
@@ -86,6 +99,9 @@ class _HomePageState extends State<HomePage> {
           )),
       body: buildPageView(),
       bottomNavigationBar: BottomNavigationBar(
+        selectedItemColor: Colors.cyan,
+        selectedIconTheme: IconThemeData(color: Colors.black, size: 30),
+        unselectedItemColor: Colors.black54,
         currentIndex: bottomSelectedIndex,
         onTap: (index) {
           bottomTapped(index);
