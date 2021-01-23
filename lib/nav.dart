@@ -93,7 +93,7 @@ class _HomePageState extends State<HomePage> {
           elevation: 0,
           backgroundColor: Colors.white,
           title: Text(
-            'Aereor',
+            'aereor',
             style: TextStyle(
                 fontSize: 30, fontFamily: 'Poppins', color: Colors.black54),
           )),

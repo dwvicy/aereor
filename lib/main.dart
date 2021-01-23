@@ -29,14 +29,22 @@ class _AereorState extends State<Aereor> {
           // text styling for headlines, titles, bodies of text, and more.
           textTheme: TextTheme(
             headline1: TextStyle(
-                fontSize: 72.0,
-                fontWeight: FontWeight.bold,
+                color: Colors.black54,
+                fontSize: 20.0,
+                fontWeight: FontWeight.w600,
                 fontFamily: 'Poppins'),
+            headline2: TextStyle(
+                color: Colors.black54, fontSize: 20.0, fontFamily: 'Poppins'),
             headline6: TextStyle(
+                color: Colors.black54,
                 fontSize: 36.0,
                 fontStyle: FontStyle.italic,
                 fontFamily: 'Poppins'),
-            bodyText2: TextStyle(fontSize: 14.0, fontFamily: 'Poppins'),
+            bodyText2: TextStyle(
+              fontSize: 14.0,
+              fontFamily: 'Poppins',
+              color: Colors.black54,
+            ),
           ),
           bottomNavigationBarTheme: BottomNavigationBarThemeData(
               selectedLabelStyle:
