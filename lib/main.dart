@@ -14,6 +14,7 @@ class _AereorState extends State<Aereor> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: HomePage(),
     );
   }
