@@ -4,6 +4,8 @@ import 'package:aereor/screens/profile.dart';
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 
+import 'constants/drawer.dart';
+
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
@@ -43,6 +45,7 @@ class _HomePageState extends State<HomePage> {
 
   Widget buildPageView() {
     return PageView(
+      physics: NeverScrollableScrollPhysics(),
       controller: pageController,
       onPageChanged: (index) {
         pageChanged(index);
@@ -73,6 +76,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: CustomDrawer(),
       backgroundColor: Colors.white,
       appBar: AppBar(
           actions: [
@@ -85,11 +89,16 @@ class _HomePageState extends State<HomePage> {
               ),
             )
           ],
-          leading: Icon(
-            Icons.menu_rounded,
-            color: Colors.black54,
-            size: 30,
-          ),
+          // leading: IconButton(
+          //   icon: Icon(
+          //     Icons.menu_rounded,
+          //     color: Colors.black54,
+          //     size: 30,
+          //   ),
+          //   onPressed: () {
+          //     Scaffold.of(context).openDrawer();
+          //   },
+          // ),
           elevation: 0,
           backgroundColor: Colors.white,
           title: Text(

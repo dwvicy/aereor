@@ -18,7 +18,7 @@ class _AereorState extends State<Aereor> {
       home: HomePage(),
       theme: ThemeData(
           // Define the default brightness and colors.
-          brightness: Brightness.dark,
+
           primaryColor: Colors.green[400],
           accentColor: Colors.greenAccent[900],
 
@@ -46,6 +46,8 @@ class _AereorState extends State<Aereor> {
               color: Colors.black54,
             ),
           ),
+          appBarTheme: AppBarTheme(
+              iconTheme: IconThemeData(color: Colors.black54, size: 30)),
           bottomNavigationBarTheme: BottomNavigationBarThemeData(
               selectedLabelStyle:
                   TextStyle(color: Colors.black54, fontFamily: 'Poppins'),
