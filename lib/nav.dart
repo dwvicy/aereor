@@ -2,6 +2,7 @@ import 'package:aereor/screens/daily.dart';
 import 'package:aereor/screens/goals.dart';
 import 'package:aereor/screens/profile.dart';
 import 'package:flutter/material.dart';
+import 'package:line_icons/line_icons.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -13,12 +14,12 @@ class _HomePageState extends State<HomePage> {
 
   List<BottomNavigationBarItem> buildBottomNavBarItems() {
     return [
-      BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+      BottomNavigationBarItem(icon: Icon(LineIcons.home), label: 'Home'),
       BottomNavigationBarItem(
-        icon: Icon(Icons.search),
+        icon: Icon(LineIcons.leaf),
         label: 'Tracker',
       ),
-      BottomNavigationBarItem(icon: Icon(Icons.info_outline), label: 'Profile')
+      BottomNavigationBarItem(icon: Icon(LineIcons.user), label: 'Profile')
     ];
   }
 
@@ -61,6 +62,21 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+          actions: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Icon(
+                LineIcons.bell_o,
+                size: 30,
+                color: Colors.black54,
+              ),
+            )
+          ],
+          leading: Icon(
+            Icons.menu_rounded,
+            color: Colors.black54,
+            size: 30,
+          ),
           elevation: 0,
           backgroundColor: Colors.white,
           title: Text(
