@@ -56,7 +56,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   void onDonePress() {
     // Back to the first tab
-    this.goToTab(0);
+    Navigator.of(context).pushNamed('/user');
   }
 
   void onTabChangeCompleted(index) {
@@ -151,7 +151,7 @@ class _SplashScreenState extends State<SplashScreen> {
       // Dot indicator
       colorDot: Colors.black54,
       sizeDot: 13.0,
-      typeDotAnimation: dotSliderAnimation.SIZE_TRANSITION,
+      typeDotAnimation: dotSliderAnimation.DOT_MOVEMENT,
 
       // Tabs
       listCustomTabs: this.renderListCustomTabs(),

@@ -17,7 +17,11 @@ class _AereorState extends State<Aereor> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => SplashScreen(),
+        '/user': (context) => UserName()
+      },
       theme: ThemeData(
           // Define the default brightness and colors.
 
