@@ -1,4 +1,6 @@
 import 'package:aereor/nav.dart';
+import 'package:aereor/screens/splashscreen.dart';
+import 'package:aereor/screens/username.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +17,7 @@ class _AereorState extends State<Aereor> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: SplashScreen(),
       theme: ThemeData(
           // Define the default brightness and colors.
 
