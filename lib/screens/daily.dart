@@ -7,14 +7,16 @@ import 'package:line_icons/line_icons.dart';
 List<Widget> cards = [
   Container(
     decoration: BoxDecoration(
-        color: Colors.red.shade300, borderRadius: BorderRadius.circular(10)),
+        color: Colors.amber.shade200, borderRadius: BorderRadius.circular(10)),
   ),
   Container(
       decoration: BoxDecoration(
-          color: Colors.red.shade300, borderRadius: BorderRadius.circular(10))),
+          color: Colors.amber.shade200,
+          borderRadius: BorderRadius.circular(10))),
   Container(
       decoration: BoxDecoration(
-          color: Colors.red.shade300, borderRadius: BorderRadius.circular(10))),
+          color: Colors.amber.shade200,
+          borderRadius: BorderRadius.circular(10))),
 ];
 
 class Daily extends StatefulWidget {
