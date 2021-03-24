@@ -1,4 +1,5 @@
 import 'package:aereor/nav.dart';
+import 'package:aereor/screens/daily.dart';
 import 'package:aereor/screens/splashscreen.dart';
 import 'package:aereor/screens/username.dart';
 import 'package:flutter/material.dart';
@@ -20,7 +21,8 @@ class _AereorState extends State<Aereor> {
       initialRoute: '/',
       routes: {
         '/': (context) => SplashScreen(),
-        '/user': (context) => UserName()
+        '/user': (context) => UserName(),
+        '/home': (context) => HomePage()
       },
       theme: ThemeData(
           // Define the default brightness and colors.

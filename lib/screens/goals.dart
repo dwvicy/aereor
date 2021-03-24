@@ -44,7 +44,7 @@ class _GoalsState extends State<Goals> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
                             Text(
-                              "${DateTime.now().day + f}",
+                              (day < 31) ? "${DateTime.now().day + f}" : "1",
                               style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: day == DateTime.now().day
